@@ -56,7 +56,7 @@
   2. Going through 2 arrays simultaneously ( a loop in a loop)
   3. Using the string methods we learned in Lesson 1
   4. Homework assignment
-
+---
 ### :calendar: Week 3
 #### Day 1
 * :notebook: Lesson
@@ -72,5 +72,6 @@
       * https://ui.dev/var-let-const/
   3. Template Strings 
       * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+---
 ### :calendar: Week 4
 #### Coming Soon 
