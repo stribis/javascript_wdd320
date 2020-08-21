@@ -8,6 +8,7 @@
 |:one: Day 1 & 2|[Syntax, variables, data types...](https://github.com/stribis/javascript_wdd320/tree/master/week_01)|
 |:two: Day 1 & 2|[Alert, confirm, prompt arrays and strings...](https://github.com/stribis/javascript_wdd320/tree/master/week_02)|
 |:three: Day 1 & 2|[Functions, Objects, Console Methods, let & const, Template Strings/Literals...](https://github.com/stribis/javascript_wdd320/tree/master/week_03)|
+|:three: Day 1 & 2|[DOM Manipulation](https://github.com/stribis/javascript_wdd320/tree/master/week_04)|
 
 
 ---
