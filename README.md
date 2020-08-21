@@ -74,4 +74,20 @@
       * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 ---
 ### :calendar: Week 4
-#### Coming Soon 
+#### Day 1 & 2
+* :notebook: Lesson
+  1. More Basics (Check at home)
+  2. DOM Basics - Element Selection
+  3. Click Events
+  4. Getting input values
+  5. More events (We will see this next time)
+#### Day 1 
+* :hammer_and_wrench: Exercises
+  1. Creating an Element
+  2. Creating 100 boxes with a loop
+  3. Generating elements with a button and click events
+  4. Creating a user defined story
+---
+### :calendar: Week 4.5
+* :hammer_and_wrench: Homework
+  * DO NOT CHECK THE SOLUTION BEFORE TRYING
