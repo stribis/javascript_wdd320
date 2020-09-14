@@ -1,0 +1,244 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{ 
+  background: #222;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.machine{
+  margin-top: 5rem;
+  background: silver;
+  width: 600px;
+  height: 1000px;
+  position: relative;
+}
+
+.water-container {
+  background: transparent;
+  border: solid 2px silver;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  right: 100%;
+  bottom: 600px;
+}
+
+.water-container :after {
+  content: 'H20';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.beans-container {
+  background: transparent;
+  border: solid 2px silver;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 100%;
+  bottom: 600px;
+}
+.beans-container:after {
+  content: 'Beans';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.controls {
+  position: absolute;
+  width: 90%;
+  height: 300px;
+  border-radius: 15px;
+  background: rgb(20, 0, 66);
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  border: solid 20px black;
+  color: white;
+  font-family: monospace;
+}
+
+.getCoffee{
+  position: absolute;
+  background: red;
+  border: solid 2px black;
+  color: white;
+  font-family: monospace;
+  padding: 0.5rem;
+  bottom: 5px;
+  right: 5px;
+}
+
+.nuzzles{
+  width: 200px;
+  height: 250px;
+  background: rgb(77, 77, 77);
+  position: absolute;
+  top: calc(300px + 5%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nuzzle{
+  width: 50px;
+  height: 70px;
+  background: rgb(134, 116, 116);
+  position: absolute;
+  top: 100%;
+}
+.nuzzle.left{
+  left: 25px;
+}
+.nuzzle.right{
+  right: 25px;
+}
+
+.outlet{
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 350px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.socket{
+  position: relative;
+  border: solid 1px grey;
+  width: 100px;
+  height: 75px;
+  border-radius: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socket.top{
+  top: 15%;
+}
+.socket.bottom{
+  bottom: 15%;
+}
+.socket:before{
+  content: '';
+  width: 6px;
+  height: 60%;
+  background-color: rgb(56, 56, 56);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.socket:after{
+  content: '';
+  width: 6px;
+  height: 60%;
+  background-color: rgb(56, 56, 56);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.plug{
+  position: absolute;
+  top: 15%;
+  left: 150%;
+  transform: translateX(-50%);
+  background: rgb(194, 194, 194);
+  width: 100px;
+  height: 75px;
+  border-radius: 33%;
+}
+
+.cable{
+  background: rgb(194, 194, 194);
+  width: 10px;
+  height: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mug{
+  width: 230px;
+  height: 300px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.handle{
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  border: solid 20px white;
+  border-radius: 5px;
+  left: calc(100% - 20px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.beans{
+  background-color: burlywood;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+}
+
+.water{
+  background-color: aqua;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+}
+
+.steam{
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  background: rgb(255, 255, 255);
+  width: 100px;
+  height: 180px;
+  transform: rotate(-30deg);
+  border-radius: 50%;
+  display: none;
+  z-index: -1;
+  border: solid 1px rgb(146, 146, 146);
+}
+.steam:after{
+  content: '';
+  width: 60px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border: solid 1px rgb(146, 146, 146);
+  transform: rotate(90deg);
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: -2;
+}

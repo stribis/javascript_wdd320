@@ -8,7 +8,8 @@
 |:one: Day 1 & 2|[Syntax, variables, data types...](https://github.com/stribis/javascript_wdd320/tree/master/week_01)|
 |:two: Day 1 & 2|[Alert, confirm, prompt arrays and strings...](https://github.com/stribis/javascript_wdd320/tree/master/week_02)|
 |:three: Day 1 & 2|[Functions, Objects, Console Methods, let & const, Template Strings/Literals...](https://github.com/stribis/javascript_wdd320/tree/master/week_03)|
-|:three: Day 1 & 2|[DOM Manipulation](https://github.com/stribis/javascript_wdd320/tree/master/week_04)|
+|:four: Day 1 & 2|[DOM Manipulation](https://github.com/stribis/javascript_wdd320/tree/master/week_04)|
+|:five: Day 1 & 2|[Image gallery, form validation, repetition](https://github.com/stribis/javascript_wdd320/tree/master/week_05)|
 
 
 ---
@@ -82,7 +83,6 @@
   3. Click Events
   4. Getting input values
   5. More events (We will see this next time)
-#### Day 1 
 * :hammer_and_wrench: Exercises
   1. Creating an Element
   2. Creating 100 boxes with a loop
@@ -92,3 +92,32 @@
 ### :calendar: Week 4.5
 * :hammer_and_wrench: Homework
   * DO NOT CHECK THE SOLUTION BEFORE TRYING
+
+  ---
+### :calendar: Week 5
+#### Day 1 & 2
+* :notebook: Lesson
+  1. Homework Solutions
+  2. forEach (Image gallery)
+  3. Validation 
+    * regex
+    * testing inputs
+  4. Coffee Machine with DOM Manipulation (JS Lerngruppe)
+* :hammer_and_wrench: Exercises
+  1. Simple image gallery with thumbnails
+    * Click events
+    * forEach Loops
+    * Arrow functions
+    * Changing src attribute
+    * Adding and removing classes
+    * Timer functions
+  2. Form Validation 
+    * Use of functions & parameters 
+    * Regular Expressions
+      * https://regex101.com/
+      * https://www.regular-expressions.info/quickstart.html
+      * https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+  3. DOM Coffee Machine
+    * Using functions and style properties 
+    * offsetHeight :
+      * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
