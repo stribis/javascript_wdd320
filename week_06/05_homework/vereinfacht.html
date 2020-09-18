@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* === Small CSS Reset === */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    *, *::after, *::before{
+      box-sizing: border-box;
+    }
+
+    /* Dark mode */
+    body{
+      background-color: #222;
+    }
+
+    /* Other */
+
+    nav{
+      width: 100%;
+      height: 10vh;
+      background: white;
+      display: flex;
+      position: relative;
+    }
+    .orange {
+      width: 400px;
+      height: 100%;
+      background: orange;
+    }
+    .blue{
+      width: 400px;
+      height: 100%;
+      padding: 10px 0;
+      background: blue;
+    }
+
+    .red{
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 10vh;
+      background: red;
+    }
+
+    .green {
+      display: none;
+      position: absolute;
+      width: 400px;
+      height: 500px;
+      top: 100%;
+      right: 0;
+      background-color: green;
+    }
+
+    .green.active {
+      display: block;
+    }
+
+    .red.active {
+      background: hotpink;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .blue {
+        display: none;
+      }
+
+      .red  {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="orange">LOGO</div>
+    <div class="blue">Nav Desktop</div>
+    <div class="red">
+      Burger
+      <div class="green">
+        Nav Mobile
+      </div>
+    </div>
+  </nav>
+
+  <script>
+
+    document.querySelector('.red').addEventListener('click', e => {
+      const green = document.querySelector('.green')
+      const red = document.querySelector('.red')
+
+      green.classList.toggle('active')
+      red.classList.toggle('active')
+    })
+
+  </script>
+</body>
+</html>

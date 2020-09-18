@@ -10,6 +10,7 @@
 |:three: Day 1 & 2|[Functions, Objects, Console Methods, let & const, Template Strings/Literals...](https://github.com/stribis/javascript_wdd320/tree/master/week_03)|
 |:four: Day 1 & 2|[DOM Manipulation](https://github.com/stribis/javascript_wdd320/tree/master/week_04)|
 |:five: Day 1 & 2|[Image gallery, form validation, repetition](https://github.com/stribis/javascript_wdd320/tree/master/week_05)|
+|:six: Day 1 & 2|[Loading, more events, local storage, slider, homework](https://github.com/stribis/javascript_wdd320/tree/master/week_06)|
 
 
 ---
@@ -121,3 +122,24 @@
     * Using functions and style properties 
     * offsetHeight :
       * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
+
+  ---
+### :calendar: Week 6
+#### Day 1 & 2
+* :notebook: Lesson
+  1. Load events
+    * onload
+    * DOMContentLoaded
+    * defer
+  2. More Events
+    * Mouse and Keyboard Events
+* :hammer_and_wrench: Exercises
+  1. Repetition Exercise
+  2. Slider
+    * Simple slider (no animation)
+  3. Homework
+    * Recreate the website provided in Discord 
+    * Try to make it look as similar as possible to the screenshots
+    * Mobile version hides the normal navigation and shows a burger menu
+    * When Burger menu is clicked, mobile navigation is displayed
+  4. Progress on the Todo List with local storage
