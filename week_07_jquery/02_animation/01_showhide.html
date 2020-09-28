@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+        }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Instantaneously hide all paragraphs
+       // $( "p" ).hide();
+        
+        // Instantaneously show all divs that have the hidden style class
+        //$( "p.hidden" ).show();
+
+        // Slowly hide all paragraphs
+        //$( "p" ).hide( "slow" );
+        
+        // Quickly show all divs that have the hidden style class
+        //$( "p.hidden" ).show( "fast" );
+
+        // Hide all paragraphs over half a second
+        //$( "p" ).hide( 500 );
+        
+        // Show all divs that have the hidden style class over 1.25 seconds
+        //$( "p.hidden" ).show( 1250 );
+        
+        
+        // Lets try it out
+        // use this section to try out the show and hide
+        $("#hide-p").click(function(){
+            $("p").hide(1250);
+        });
+
+        $("#show-p").click(function(){
+            $("p").show();
+        });
+
+       
+    });
+
+    </script>
+</head>
+<body>
+    <button id="hide-p">hide p</button>
+    <button id="show-p">show p</button>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci expedita tempore reprehenderit.</p>
+</body>
+</html>

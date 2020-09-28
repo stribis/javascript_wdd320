@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        // Element selection in jQuery is very simple
+        // you just need a $()
+        // What ever you put in between your brackets is your selection
+
+        // You can have elements,
+        $("p").css("border", "1px solid blue");
+        // Classes,
+        $(".foo").css("border", "3px solid red");
+        // ids,
+        $("#baz").css("border", "3px solid green"); 
+        // or even complex CSS selections like :first          
+        $("p:first").css("background-color", "pink");
+        // or :not()          
+        $("p:not(#baz)").css("font-family", "sans-serif");
+
+        // Just remember, this is a jQuery selection that will give you back a jQuery object.
+        // This object looks different to a vanilla javascript object. 
+        // Console log a selection an see for yourself!
+
+        // Only jQuery object are able to be manipulated using jQuery methods like append, prepend and so on.
+    });
+    </script>
+</head>
+<body>
+    <div class="foo">
+        <p>bar</p>
+        <p>bar</p>
+        <p>bar</p>
+        <p>bar</p>
+        <p>bar</p>
+    </div>
+    
+    <div id="baz">
+        <ul>
+            <li>ham</li>
+            <li>ham</li>
+            <li>ham</li>
+            <li>ham</li>
+            <li>ham</li>
+            <li>ham</li>
+        </ul>
+        <p>cream</p>
+    </div>
+
+    <div>
+        <i>eggs</i>
+        <span id="spam"></span>
+    </div>
+</body>
+</html>

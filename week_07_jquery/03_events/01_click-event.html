@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: solid 1px blue;
+            margin: 20px;
+            display: inline-block;
+        }
+        #creator{
+            background-color: lightcoral;
+            border: solid 1px red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            text-align: center;
+        }
+        #deletor{
+            background-color: lightgreen;
+            border: solid 1px green;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            text-align: center;
+        }
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+    // In this exersice we have 2 squares.
+    // The first square will create new squares.
+    // The second square will get rid of created squares.
+
+    // IMPORTANT!
+    // Try this out for yourself, try to figure out how you can do this.
+    // Use the jQuery documentation if needed. Think about how you would do it in Javascript
+    // and then adapt it to jquery
+
+
+    // Solution
+
+    // We need document ready function because our script is linked before the elements
+    // since we are doing DOM manipulation, it is a good idea to wait for content to load
+    $(document).ready(function(){
+        // We are going to need two click events, the first one listens if the #creator square is clicked
+        $("#creator").click(function(){
+            // If pressed, this callback function will be called.
+            // in this case we just need to append a new square to the <main>
+            $("main").append("<div class='box blueb'>");
+        })
+        // The second one listens if the deletor square is pressed
+        $("#deletor").click(function(){
+            // In this case we neeed to remove the last instance of a square in main.
+            // We can use css for this
+            $('.blueb:last-child').remove();
+        })
+
+    });
+
+
+
+
+    </script>
+</head>
+<body>
+    <main>
+        <div id="creator" class="box">Create blue boxes</div>
+        <div id="deletor" class="box">Delete blue boxes</div>
+    </main>
+</body>
+</html>

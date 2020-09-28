@@ -56,18 +56,44 @@ function populateList () {
       todoWrapper.classList.add('todoWrapper')
       todoWrapper.innerHTML = `
       <div class="todoText" >${todo.text}</div>
-      <div class="todoCheck">${todo.complete}</div>
+      <div class="todoCheck ${todo.complete == false ? 'false': ''}"></div>
       `
 
       list.appendChild(todoWrapper)
     } )
   }
+  updateBoxes()
+}
+
+
+function updateBoxes () {
+  let boxes = document.querySelectorAll('.todoCheck')
+  boxes.forEach( (box, i) => {
+    box.addEventListener('click', e => {
+      box.classList.toggle('false')
+
+      if( box.classList.contains('false')){
+        todoList[i].complete = false
+      }else {
+        todoList[i].complete = true
+      }
+
+      localStorage.setItem('todos', JSON.stringify(todoList))
+    })
+  })
+
 }
 
 
 document.querySelector('#addbutton').addEventListener('click', e => {
   e.preventDefault()
   addTodo()
+})
 
- 
+document.querySelector('#clearCompleted').addEventListener('click', e => {
+  e.preventDefault()
+  todoList = todoList.filter( todo => todo.complete == false)
+  // Update Local Storage
+  localStorage.setItem('todos', JSON.stringify(todoList))
+  populateList()
 })

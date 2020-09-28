@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+</head>
+<body>
+  
+  <div class="foo">
+    <p>Bar</p>
+    <p>Foo</p>
+    <p>Pop</p>
+    <p>Corn</p>
+    <p>Fish</p>
+  </div>
+
+  <div id="baz">
+    <ul>
+      <li>ham</li>
+      <li>ham</li>
+      <li>ham</li>
+      <li>ham</li>
+      <li>ham</li>
+    </ul>
+    <p class="evil">cream</p>
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      
+      $('p').css('border', '1px solid blue')
+      $('.foo').css({'background-color': 'pink', 'border': 'red 3px solid'})
+      $('p:not(.evil)').css('font-family', 'sans-serif')
+
+      // BG Pink
+      // Border 3px solid red
+    })
+  </script>
+</body>
+</html>

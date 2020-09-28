@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+        body{
+            background: #333;
+        }
+        hr{
+            color: white;
+        }
+        .activate{
+            width: 260px;
+            height: 90px;
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightcoral;
+        }
+        ul{
+            background-color: lightsalmon;
+            width: 300px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+       
+        // toggle event:
+
+        $(".tog-list").click(function(){
+            $("ul").fadeToggle(1250);
+        })
+        
+        // hover event
+
+        $(".fade-box").hover(
+            function(){
+                $(".box").fadeOut('slow', function(){
+                    console.log('Faded Out')
+                });
+            },
+            function(){
+                $(".box").fadeIn('fast', function(){
+                    console.log('Faded back in')
+                });
+            }
+        )
+
+
+    });
+
+    </script>
+</head>
+<body>
+    <div class="activate fade-box">fade<br>mit hover</div>
+    <div class="box"></div>
+    <hr>
+    <div class="activate tog-list">toggle<br>mit click</div>
+    <ul>
+        <li>foo</li>
+        <li>bar</li>
+        <li>baz</li>
+        <li>beef</li>
+    </ul>
+</body>
+</html>

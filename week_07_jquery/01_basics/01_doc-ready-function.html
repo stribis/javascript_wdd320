@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document Ready Function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #myp{
+            border: solid red 2px;
+        }
+    </style>
+    <!--    
+        ALWAYS LINK JQUERY BEFORE YOUR OWN JS
+        your code needs access to the jquery library!
+    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+    // The document ready function waits for the DOM to be loaded so that it can be manipulated.
+    // without it, you wont have access to the DOM if you link your script tag before your elements.
+    $(document).ready(function(){
+        // .ready works with a callback function, this function will be called once the document is ready.
+
+        // Now that we know that the document is ready, lets manipulate some DOM
+        // The append method lets us add elements into another element after all it's childs
+        // The cool part about jQuery is that we even write the whole HTML element including value and attributes
+
+        $("#content").append("<p id='myp'>The page just loaded</p>")
+        // in this case a <p> element with the id of 'myp' will be added inside the <main> after the already existing <p>
+    });
+    
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HELLO WORLD</h1>
+    </header>
+    <main id="content">
+        <p>Just some text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quibusdam natus voluptates, excepturi deleniti alias dolorem cum nesciunt ad hic illo soluta magnam pariatur distinctio recusandae voluptas, nulla quas porro!</p>
+    </main>
+    <footer>
+        <h6>Bye bye</h6>
+    </footer>
+</body>
+</html>

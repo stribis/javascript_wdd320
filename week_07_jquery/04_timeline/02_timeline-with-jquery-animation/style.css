@@ -1,0 +1,72 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.line{
+  height: 900px;
+  width: 8px;
+  border: 4px solid #444;
+  background: #444;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.point{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: rgb(86, 173, 255);
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.point:hover:not(.selected){
+  background: rgb(156, 224, 255);
+  cursor: pointer;
+  /* width:30px;
+  height: 30px; */
+}
+
+#start{
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  background: rgb(166, 255, 148);
+  color: #111;
+}
+
+#end{
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: rgb(255, 123, 123);
+  color: #111;
+}
+
+.point-content{
+  /* display: none; */
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  margin-left: 1.4em;
+  background-color: rgb(81, 241, 255);
+  /* transition: 0.3s; */
+}
+
+.point-title{
+  transform: translate(-200%, 50%)
+}
+
+.selected{
+  background-color: transparent;
+}

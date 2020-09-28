@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manipulating Dom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{margin:0}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Jquery gives us a couple of methods that make DOM manipulation a lot easier.
+
+        // Append is very similar to vanilla JS' appendChild().
+        // It inserts an element into another element, after all it's children elements
+        $("main").append("<p id='something'>Foo Bar Baz Spam Ham</p>");
+        // HTML is equivalent to innerHTML, it changer the content between the start and end tags of an element.
+        $("header").html("<h2>hello world</h2>");
+        // Prepend is similar to append, but instead of inserting after an elements children, it inserts it before
+        $("section").prepend("<h2>My Section</h2>");
+        // With text you can change the text of an element, whatever you give in will be interpreted as text
+        $("section div").text("<tag>You can see my tags</tag>");
+    });
+    
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+    <main>
+        
+    </main>
+    <section>
+        <h3>I can insert escaped text</h3>
+        <div></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Event</title>
+  <style>
+    body{
+      background: #222;
+    }
+    div{
+      width: 150px;
+      height: 150px;
+      background: hotpink;
+    }
+  </style>
+</head>
+<body>
+ 
+  <button>Click Me</button>
+  <div></div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+     
+      //Click
+      $('button').click( e => {
+        $('div').remove()
+      } )
+
+      // Hover
+
+      $('div').hover( 
+      function (e) {
+        console.log(e)
+      }, 
+      function(e) {
+        console.log(e)
+      } )
+      
+    })
+  </script>
+</body>
+</html>

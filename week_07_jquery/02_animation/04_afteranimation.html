@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+        }
+        .lookAtMe{
+            color: red;
+        }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Fade in all hidden paragraphs; then add a style class to them (not quite right)!!!
+        //$( "p.hidden" ).fadeIn( 750 ).addClass( "lookAtMe" );   
+
+        // Fade in all hidden paragraphs; then add a style class to them (correct with animation callback)
+        /*$( "p.hidden" ).fadeIn( 750, function() {
+            // this = DOM element which has just finished being animated
+            $( this ).addClass( "lookAtMe" );
+        });*/
+
+        // Lets try
+        $("#hide-p").click(function(){
+            $( "p" ).hide("1000", function(){
+                $( this ).removeClass( "lookAtMe");
+            });
+        });
+
+        $("#animate-p").click(function(){
+            console.log("hi")
+            $( "p" ).show( 750, function() {
+                // this = DOM element which has just finished being animated
+                $( this ).addClass( "lookAtMe" );
+            });
+        });
+    });
+    
+    </script>
+</head>
+<body>
+    <button id="hide-p">Hide p</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero harum quibusdam reiciendis!</p>
+    <button id="animate-p">Show p</button>
+</body>
+</html>

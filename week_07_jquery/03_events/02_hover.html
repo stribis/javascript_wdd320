@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hover event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        li:hover{
+            cursor: pointer;
+        }
+        span{
+            font-family: 'Courier New', Courier, monospace;
+            color : red;
+            font-weight: bolder;
+        }
+        #wait{
+            color: green;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+    // Hover is one of the coolest event methods in jQuery.
+    // hover is a convination of the mouseenter and the mouseleave events
+    // so instead of taking one callback function like a normal event, it takes 2
+    // the first one corresponds to the mouse enter event and the second one 
+    // to the mouse leave event.
+
+    $(document).ready(function(){
+
+
+        $(".high").hover(
+            // first callback function is the mouse enter event
+            function(){
+                // in this case, when the mouse eneter we append a span to this ( this being the hovered element)
+                $( this ).append("<span> !!! DO THIS NOW !!!</span>");
+            }, 
+            // This is the second callback function which corresponds to the mouse leave event
+            function(){
+                // when we leave with the mouse, we remove the span!
+                $("span").remove();
+        })
+
+
+        // We can do this for as many elements as we want
+        $(".low").hover(function(){
+            $( this ).append("<span id='wait'> ... this can wait</span>");
+        }, function(){
+            $("span").remove();
+        })
+
+
+    });
+
+    
+    // SYNTAX $( selector ).hover( handlerIn, handlerOut)
+    // SAME AS: $( selector ).mouseenter( handlerIn ).mouseleave( handlerOut );
+    </script>
+<body>
+    <h2>My Priority List</h2>
+    <ul>
+        <li class="med">Wash dishes</li>
+        <li class="low">Pick up daughter from school</li>
+        <li class="high">Practice more JS</li>
+        <li class="med">Go to the moon</li>
+        <li class="med">Call mom</li>
+        <li class="high">eat Pizza</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Recap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .box{
+            width: 600px;
+            height: 400px;
+            background-color: lightblue;
+            border: rgb(101, 101, 255) 2px solid;
+            margin-left: 40px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+   
+
+    $(document).ready(function(){
+        // Mouse move will call our function coordinatesDisplay
+        $(".box").on("mousemove", coordinatesDisplay);
+
+        // Mouse hover will call the mouseEnter and mouseLeave events
+        $(".box").hover(mouseEnter, mouseLeave);
+
+    
+        function coordinatesDisplay(evt) {
+            //console.log("x: " + evt.pageX + " y: " + evt.pageY);
+            console.log(evt);
+            $("#coor").text("Mouse X: "+ evt.pageX + " Mouse Y: " + evt.pageY);
+        }
+
+        function mouseEnter(){
+            //console.log("Mouse Enter")
+            $("#info").text("Mouse is in the Box");
+            $(".box").css("background-color","lightcoral");
+        }
+        function mouseLeave() {
+            //console.log("Mouse is out of the Box")
+            $("#info").text("Mouse is out of the Box");
+            $(".box").css("background-color","lightblue");
+        }
+
+        // const log1 = "hello world";
+
+
+    })  
+
+    </script>
+</head>
+<body>
+    <h1>Event Recap</h1>
+    <h4>My Box</h4>
+    <div id="coor">Coordinates of mouse will be displayed here</div>
+    <div class="box"></div>
+    <div id="info">Mouse is outside the box</div>
+</body>
+</html>

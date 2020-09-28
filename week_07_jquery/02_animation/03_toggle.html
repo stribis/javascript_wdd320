@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+        }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Instantaneously toggle the display of all paragraphs
+        //$( "p" ).toggle();
+        
+        // Slowly toggle the display of all images
+        //$( "img" ).toggle( "slow" );
+        
+        // Toggle the display of all divs over 1.8 seconds
+        //$( "div" ).toggle( 1800 );
+
+        // Toggle the display of all ordered lists over 1 second using slide up/down animations
+        //$( "ol" ).slideToggle( 1000 );
+        
+        // Toggle the display of all blockquotes over 0.4 seconds using fade in/out animations
+        //$( "blockquote" ).fadeToggle( 400 );
+
+        // Lets try
+
+        $("button").click(function(){
+            $( "p" ).toggle(1800);
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <button>toggle</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit cupiditate voluptatem?</p>
+
+</body>
+</html>

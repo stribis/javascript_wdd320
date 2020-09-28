@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animate</title>
+  <style> 
+  /* === Small CSS Reset === */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  *, *::after, *::before{
+    box-sizing: border-box;
+  }
+
+  /*CODE*/
+  body{
+    width: 100vw;
+    height: 100vh;
+    background: #444;
+
+  }
+  
+  #box{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+    background: rgb(255, 128, 128);
+    border: black 2px solid;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: monospace;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button{
+    position: relative;
+    left: 2em;
+    top: 2em;
+    font-family: monospace;
+    font-size: 2em;
+    width: 200px;
+    height: 50px;
+    background: rgb(255, 128, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div id="button">Push Me</div>
+  <div id="box">Boxy<br>
+  The box</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(()=>{
+      
+      // The animate method lets you animate the properties you want to animate
+
+      // Check the jQuery Documentation to see which properties you can animate
+      // You can animate using absolute (exp. 500) or relative (=+500) values 
+      $('#button').on('click',function(){
+        //console.log('Hello World')
+        // add class animated
+        $('#box').animate({
+          height: 900,
+          width: 600
+        },600,function(){
+          console.log('Boxy is fat now')
+        })
+
+
+
+      })
+
+
+    })
+
+  </script>
+</body>
+
+</html>
