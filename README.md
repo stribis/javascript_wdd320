@@ -143,3 +143,38 @@
     * Mobile version hides the normal navigation and shows a burger menu
     * When Burger menu is clicked, mobile navigation is displayed
   4. Progress on the Todo List with local storage
+
+
+---
+### :calendar: Week 7
+#### :books: Unit 1
+* :school_satchel: Basics
+  1. `document.ready` Waiting for the DOM to load
+  2. `$()` jQuery Selections
+  3. `append() prepend()` and other DOM manipulation methods
+  4. Function is jQuery
+  5. Click events in jQuery
+  6. The jQuery `hover()` event 
+* 
+---
+#### :books: Unit 2
+* :runner: Animation
+  1. `show()` & `hide()` 
+  2. `slide()` animations
+  3. `toggle()` animations
+  4. Callback functions after animation is finished
+  5. Exercise: slide animation
+  6. Exercise: animation callback function
+---
+#### :books: Unit 3
+* :rocket: Events
+  1. Click events in jQuery
+  2. The jQuery `hover()` event 
+  3. Exercise: Using multiple events with jQuery
+  4. Example: From the jQuery documentation. 
+
+---
+#### :books: Unit 4
+* :watch: Timeline
+  1. Creating an interactive timeline without jQuery
+  2. Adding jQuery Animation to the timeline
