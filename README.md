@@ -193,5 +193,5 @@
 #### :books: Unit 7
 * :link: API / Fetch / AJAX
   1. Fetch API with `fetch()`, `.then()` 
-  2. [`Ajax()`]('https://api.jquery.com/jquery.ajax/')- Using ajax to get JSON from APIs
+  2. [`Ajax()`](https://api.jquery.com/jquery.ajax/)- Using ajax to get JSON from APIs
 ---
