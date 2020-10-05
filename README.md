@@ -66,17 +66,17 @@
 #### Day 1
 * :notebook: Lesson
   1. Functions - Function declarations, expressions and more: `function example(){}`
-      * https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99
-      * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+        * https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99
+        * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
   2. Objects - Object structure, methods and object literals: `let myObj = { }` 
-      * https://www.w3schools.com/js/js_objects.asp
+        * https://www.w3schools.com/js/js_objects.asp
 #### Day 1 
 * :notebook: Lesson
   1. Different things we can do with `console`
   2. `let` and `const` 
-      * https://ui.dev/var-let-const/
+        * https://ui.dev/var-let-const/
   3. Template Strings 
-      * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+        * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 ---
 ### :calendar: Week 4
 #### Day 1 & 2
@@ -103,47 +103,47 @@
   1. Homework Solutions
   2. forEach (Image gallery)
   3. Validation 
-    * regex
-    * testing inputs
+      * regex
+      * testing inputs
   4. Coffee Machine with DOM Manipulation (JS Lerngruppe)
 * :hammer_and_wrench: Exercises
   1. Simple image gallery with thumbnails
-    * Click events
-    * forEach Loops
-    * Arrow functions
-    * Changing src attribute
-    * Adding and removing classes
-    * Timer functions
+      * Click events
+      * forEach Loops
+      * Arrow functions
+      * Changing src attribute
+      * Adding and removing classes
+      * Timer functions
   2. Form Validation 
-    * Use of functions & parameters 
-    * Regular Expressions
-      * https://regex101.com/
-      * https://www.regular-expressions.info/quickstart.html
-      * https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+      * Use of functions & parameters 
+      * Regular Expressions
+        * https://regex101.com/
+        * https://www.regular-expressions.info/quickstart.html
+        * https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
   3. DOM Coffee Machine
-    * Using functions and style properties 
-    * offsetHeight :
-      * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
+      * Using functions and style properties 
+      * offsetHeight :
+        * https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
 
   ---
 ### :calendar: Week 6
 #### Day 1 & 2
 * :notebook: Lesson
   1. Load events
-    * onload
-    * DOMContentLoaded
-    * defer
+      * onload
+      * DOMContentLoaded
+      * defer
   2. More Events
-    * Mouse and Keyboard Events
+      * Mouse and Keyboard Events
 * :hammer_and_wrench: Exercises
   1. Repetition Exercise
   2. Slider
-    * Simple slider (no animation)
+      * Simple slider (no animation)
   3. Homework
-    * Recreate the website provided in Discord 
-    * Try to make it look as similar as possible to the screenshots
-    * Mobile version hides the normal navigation and shows a burger menu
-    * When Burger menu is clicked, mobile navigation is displayed
+      * Recreate the website provided in Discord 
+      * Try to make it look as similar as possible to the screenshots
+      * Mobile version hides the normal navigation and shows a burger menu
+      * When Burger menu is clicked, mobile navigation is displayed
   4. Progress on the Todo List with local storage
 
 
@@ -185,20 +185,20 @@
 #### :books: Unit 5
 * :arrow_backward: Slider :arrow_forward:
   1. Creating a slider with jQuery ( read the comments in the code!)
-  * Useful functions :
-    * [`css()`](https://api.jquery.com/css/) 
-    * [`prependTo()`](https://api.jquery.com/prependto/) 
-    * [`appendTo()`](https://api.jquery.com/appendto/) 
-    * [`animate()`](https://api.jquery.com/animate/) 
+    * Useful functions :
+      * [`css()`](https://api.jquery.com/css/) 
+      * [`prependTo()`](https://api.jquery.com/prependto/) 
+      * [`appendTo()`](https://api.jquery.com/appendto/) 
+      * [`animate()`](https://api.jquery.com/animate/) 
 
 #### :books: Unit 6
 * :musical_keyboard: Accordion
   1. Creating a accordion with jQuery ( read the comments in the code!)
-  * Useful functions :
-    * [`slideDown()`](https://api.jquery.com/slidedown/) 
-    * [`toggleClass()`](https://api.jquery.com/toggleclass/) 
-    * [`parent()`](https://api.jquery.com/parent/#parent-selector) 
-    * [`siblings()`](https://api.jquery.com/siblings/#siblings-selector) 
+    * Useful functions :
+      * [`slideDown()`](https://api.jquery.com/slidedown/) 
+      * [`toggleClass()`](https://api.jquery.com/toggleclass/) 
+      * [`parent()`](https://api.jquery.com/parent/#parent-selector) 
+      * [`siblings()`](https://api.jquery.com/siblings/#siblings-selector) 
 
 #### :books: Unit 7
 * :link: API / Fetch / AJAX
