@@ -155,8 +155,7 @@
   4. Function is jQuery
   5. Click events in jQuery
   6. The jQuery `hover()` event 
-* 
----
+
 #### :books: Unit 2
 * :runner: Animation
   1. `show()` & `hide()` 
@@ -165,7 +164,7 @@
   4. Callback functions after animation is finished
   5. Exercise: slide animation
   6. Exercise: animation callback function
----
+
 #### :books: Unit 3
 * :rocket: Events
   1. Click events in jQuery
@@ -173,8 +172,24 @@
   3. Exercise: Using multiple events with jQuery
   4. Example: From the jQuery documentation. 
 
----
 #### :books: Unit 4
 * :watch: Timeline
   1. Creating an interactive timeline without jQuery
   2. Adding jQuery Animation to the timeline
+
+---
+### :calendar: Week 8
+
+### :books: Unit 5
+* :arrow_backward: Slider :arrow_forward:
+  1. Creating a slider with jQuery ( read the comments in the code!)
+---
+### :books: Unit 6
+* :musical_keyboard: Accordion
+  1. Creating a accordion with jQuery ( read the comments in the code!)
+---
+### :books: Unit 7
+* :link: API / Fetch / AJAX
+  1. Fetch API with `fetch()`, `.then()` 
+  2. `Ajax()`- Using ajax to get JSON from APIs
+---

@@ -1,0 +1,109 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  color: rgb(115, 255, 139);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+  margin: 3rem auto;
+  height: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > input {
+  padding: 1rem;
+  border: solid 1px rgb(115, 255, 139);
+  color: rgb(115, 255, 139);
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 2rem;
+  margin: 3rem 0;
+  font-weight: 200;
+  text-align: center;
+}
+
+.container > .selections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.selections p {
+  font-weight: 200;
+  color: rgb(84, 56, 220);
+}
+
+
+.selections  select {
+  margin: 1rem 2rem;
+  font-family: inherit;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 2px solidrgb(84, 56, 220);
+  background: transparent;
+  color: rgb(84, 56, 220);
+  padding: 1rem 1.2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  text-align: center !important;
+}
+
+.exchange {
+  margin-bottom: 3rem;
+  background: transparent;
+  color:rgb(84, 56, 220);
+  border: solid 3px rgb(84, 56, 220);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  font-size: 2rem;
+  padding: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none; 
+  font-weight: 600;
+}
+
+option {
+  background: rgb(115, 255, 139);
+  color: #222;
+}
+
+option:focus {
+  outline:#222 auto 1px;
+}
+
+.exchange:hover{
+  background:  rgb(84, 56, 220);
+  color: #222;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.result {
+  color: rgb(115, 255, 139);
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.result > span {
+  font-weight: 600;
+}

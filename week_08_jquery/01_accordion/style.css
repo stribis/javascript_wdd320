@@ -1,0 +1,73 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+/* === Body Shit === */
+body {
+  background: linear-gradient(to bottom right, #b413fe, #45e8fd);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Accordion Container */
+
+.container {
+  box-shadow: 2px 2px 8px rgb(105, 105, 105);
+  border-radius: 1rem;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  padding: 3rem;
+}
+
+.left-panel h2{
+  font-size: 2rem;
+}
+
+.item {
+  border: solid 1px #ccc;
+  padding: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  margin-top: 1rem;
+}
+
+.item-info {
+  display: none;
+} 
+
+.fas {
+  border-radius: 50%;
+  background: rgb(236, 236, 236);
+  color: rgb(255, 144, 144);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

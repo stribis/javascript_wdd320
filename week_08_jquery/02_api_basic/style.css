@@ -1,0 +1,31 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px #444;
+}
+
+.card img { 
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
