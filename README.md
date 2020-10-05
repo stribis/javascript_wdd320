@@ -151,16 +151,16 @@
 ### :calendar: Week 7
 #### :books: Unit 1
 * :school_satchel: Basics
-  1. `document.ready` Waiting for the DOM to load
-  2. `$()` jQuery Selections
-  3. `append() prepend()` and other DOM manipulation methods
+  1. [`document.ready`](https://api.jquery.com/ready/) Waiting for the DOM to load
+  2. [`$()`](https://learn.jquery.com/using-jquery-core/selecting-elements/) jQuery Selections
+  3. [`append() prepend()`](https://api.jquery.com/append/) and other DOM manipulation methods
   4. Function is jQuery
   5. Click events in jQuery
-  6. The jQuery `hover()` event 
+  6. The jQuery [`hover()`](https://api.jquery.com/hover/) event 
 
 #### :books: Unit 2
-* :runner: Animation
-  1. `show()` & `hide()` 
+* :runner: [Animation](https://api.jquery.com/category/effects/)
+  1. `show()` & `hide()`
   2. `slide()` animations
   3. `toggle()` animations
   4. Callback functions after animation is finished
@@ -170,7 +170,7 @@
 #### :books: Unit 3
 * :rocket: Events
   1. Click events in jQuery
-  2. The jQuery `hover()` event 
+  2. The jQuery [`hover()`](https://api.jquery.com/hover/) event 
   3. Exercise: Using multiple events with jQuery
   4. Example: From the jQuery documentation. 
 
