@@ -11,6 +11,8 @@
 |:four: Day 1 & 2|[DOM Manipulation](https://github.com/stribis/javascript_wdd320/tree/master/week_04)|
 |:five: Day 1 & 2|[Image gallery, form validation, repetition](https://github.com/stribis/javascript_wdd320/tree/master/week_05)|
 |:six: Day 1 & 2|[Loading, more events, local storage, slider, homework](https://github.com/stribis/javascript_wdd320/tree/master/week_06)|
+|:seven: Day 1 & 2|[jQuery Basics ( Animation, events, syntax)](https://github.com/stribis/javascript_wdd320/tree/master/week_07_jquery)|
+|:eight: Day 1 & 2|[jQuery Components (Accordion and Slider) & AJAX / API](https://github.com/stribis/javascript_wdd320/tree/master/week_08_jquery)|
 
 
 ---
@@ -180,15 +182,15 @@
 ---
 ### :calendar: Week 8
 
-### :books: Unit 5
+#### :books: Unit 5
 * :arrow_backward: Slider :arrow_forward:
   1. Creating a slider with jQuery ( read the comments in the code!)
----
-### :books: Unit 6
+
+#### :books: Unit 6
 * :musical_keyboard: Accordion
   1. Creating a accordion with jQuery ( read the comments in the code!)
----
-### :books: Unit 7
+
+#### :books: Unit 7
 * :link: API / Fetch / AJAX
   1. Fetch API with `fetch()`, `.then()` 
   2. `Ajax()`- Using ajax to get JSON from APIs
