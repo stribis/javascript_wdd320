@@ -185,13 +185,23 @@
 #### :books: Unit 5
 * :arrow_backward: Slider :arrow_forward:
   1. Creating a slider with jQuery ( read the comments in the code!)
+  * Useful functions :
+    * [`css()`](https://api.jquery.com/css/) 
+    * [`prependTo()`](https://api.jquery.com/prependto/) 
+    * [`appendTo()`](https://api.jquery.com/appendto/) 
+    * [`animate()`](https://api.jquery.com/animate/) 
 
 #### :books: Unit 6
 * :musical_keyboard: Accordion
   1. Creating a accordion with jQuery ( read the comments in the code!)
+  * Useful functions :
+    * [`slideDown()`](https://api.jquery.com/slidedown/) 
+    * [`toggleClass()`](https://api.jquery.com/toggleclass/) 
+    * [`parent()`](https://api.jquery.com/parent/#parent-selector) 
+    * [`siblings()`](https://api.jquery.com/siblings/#siblings-selector) 
 
 #### :books: Unit 7
 * :link: API / Fetch / AJAX
-  1. Fetch API with `fetch()`, `.then()` 
+  1. Fetch API with [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) 
   2. [`Ajax()`](https://api.jquery.com/jquery.ajax/)- Using ajax to get JSON from APIs
 ---
