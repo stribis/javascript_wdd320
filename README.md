@@ -13,6 +13,7 @@
 |:six: Day 1 & 2|[Loading, more events, local storage, slider, homework](https://github.com/stribis/javascript_wdd320/tree/master/week_06)|
 |:seven: Day 1 & 2|[jQuery Basics ( Animation, events, syntax)](https://github.com/stribis/javascript_wdd320/tree/master/week_07_jquery)|
 |:eight: Day 1 & 2|[jQuery Components (Accordion and Slider) & AJAX / API](https://github.com/stribis/javascript_wdd320/tree/master/week_08_jquery)|
+|:nine: Day 1 & 2|[AJAX / API Project](https://github.com/stribis/javascript_wdd320/tree/master/week_09_jquery)|
 
 
 ---
@@ -204,4 +205,15 @@
 * :link: API / Fetch / AJAX
   1. Fetch API with [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) 
   2. [`Ajax()`](https://api.jquery.com/jquery.ajax/)- Using ajax to get JSON from APIs
+---
+
+### :calendar: Week 9
+
+#### :books: Unit 8
+* Web Application with API 
+  1. Create a web application using any API you desire
+      * The only prerequisite is to use an API request (i.e. Using fetch or jquery ajax )
+      * All finished project will be listed here in the future (LINK TO REPO COMING SOON)
+  2. Example App can be found in the week_09 folder
+
 ---
