@@ -3,7 +3,7 @@
 <p align="center">
 <img src="https://img.shields.io/badge/WDD-320-green" alt="Class">
 <img src="https://img.shields.io/badge/Module-4300-green" alt="Module">
-<img src="https://img.shields.io/badge/Lang-JavaScript/jQuery" alt="Focus">
+<img src="https://img.shields.io/badge/Lang-Javascript%2FjQuery-blue" alt="Focus">
 </p>
 
 # JavaScript WDD 320 - SAE Zürich
