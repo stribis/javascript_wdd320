@@ -1,0 +1,159 @@
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(113, 194, 113);
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0.8rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    display: inline-block;
+    width: 60%;
+    font-size: 1.5rem;
+    color: black;
+    background: rgb(113, 194, 113);
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+a {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.contain {
+    display: none;
+}
+
+/* Navigation */
+
+nav {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+/* Button */
+button {
+    background: white;
+    width: 16rem;
+    height: 16rem;
+    font-size: 2rem;
+    color: rgb(113, 194, 113);
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 10rem;
+    border: solid 3px rgb(190, 190, 190);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Card mit Match-Infos */
+
+.card {
+    background: rgb(190, 190, 190);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+p.date {
+    font-size: 0.8rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+
+
+.line {
+    height: 5px;
+    width: 100%;
+    background: rgb(113, 194, 113);
+    margin: 3rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 3.5rem;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+
+.embedded_video {
+    width: 525px;
+    height: 665px;
+    overflow: hidden;
+    display: block;
+ 
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.highlights_video {
+    display: none;
+}
+
+.fas {
+    margin-left: 1rem;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+

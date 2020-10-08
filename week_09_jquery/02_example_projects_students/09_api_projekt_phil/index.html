@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lol API</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .card {
+            background-image: url(https://pbs.twimg.com/media/CBH_Bm2UwAAqQaR.png);
+            border-radius: 1rem;
+            padding: 1rem;
+            border: solid black 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .info {
+            display: none;
+            align-self: flex-start;
+            margin-bottom: 1rem;
+            font-size: large;
+            color: white;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0.5rem;
+            border-radius: 1rem;
+            background-color: #aaa;
+            height: 2rem;
+        }
+
+
+        img {
+            height: 500px;
+            border-radius: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

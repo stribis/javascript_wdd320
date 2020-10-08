@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularvalidation</title>
+    <link rel="stylesheet" href="Frm_CSS/reset.css" />
+    <link rel="stylesheet" href="Frm_CSS/main.css" />
+    <script src="Frm_JS/app.js" defer></script>
+    <!-- <link src ="https://thecatapi.com/v1/images? api_key = be572ce6-1e62-4bb6-8da8-df20c7bda8a"> -->
+    
+  </head>
+  <body>
+    <div class="container"></div>
+    
+    <form
+      class="Formular"
+      id="Form"
+      oninput="zeit.value = parseInt(int.value) +'s'"
+    >
+      <h2>
+        Bitte gib hier folgende Informationen an um die Bildershow zu starten
+      </h2>
+
+      <p class="radios">
+        <input type="radio" name="anrede" class="anr" id="male" value="Herr" />
+        <label for="male">Herr</label>
+        <input
+          type="radio"
+          name="anrede"
+          class="anr"
+          id="female"
+          value="Frau"
+        />
+        <label for="female">Frau</label>
+        <input
+          type="radio"
+          name="anrede"
+          class="anr"
+          id="undefined"
+          value="undefined"
+          checked
+        />
+      </p>
+
+      <label for="inputName">Vorname</label>
+      <input
+        type="text"
+        name="inputName"
+        class="input"
+        id="firstName"
+        placeholder="Vorname"
+      />
+
+      <label for="inputNName">Nachname</label>
+      <input
+        type="text"
+        name="inputNName"
+        class="input"
+        id="lastName"
+        placeholder="Nachname"
+      />
+
+      <label for="number">Jahrgang</label>
+      <input
+        type="number"
+        name="jahrgang"
+        class="input"
+        id="jhg"
+        placeholder="Jahrgang"
+      />
+
+      <label for="inputmail">E-Mail</label>
+      <input
+        type="email"
+        name="inputmail"
+        class="input"
+        id="mail"
+        placeholder="deine@adresse.du"
+      />
+
+      <label for="number">Telefonnummer</label>
+      <input
+        type="number"
+        name="telNumber"
+        class="input"
+        id="tel"
+        placeholder="Telefonnummer"
+      />
+
+      <label for="textarea">Motto des tages</label>
+      <textarea
+        name="textarea"
+        class="input"
+        id="nachricht"
+        rows="5"
+        maxlength="250"
+      ></textarea>
+
+      <h2>Wähle hier was du sehen wilst</h2>
+      <br />
+      <fieldset id="checks">
+        <input
+          type="checkbox"
+          class="chkBox"
+          name="pict"
+          id="thema"
+          value="cat"
+        />
+        <label for="cat">Katzen 🐱</label><br />
+        <input
+          type="checkbox"
+          class="chkBox"
+          name="pict"
+          id="thema"
+          value="dog"
+        />
+        <label for="dog">Hunde 🐶</label><br />
+        <input
+          type="checkbox"
+          class="chkBox"
+          name="pict"
+          id="thema"
+          value="snake"
+        />
+        <label for="snake">Vögel 🐦</label>
+      </fieldset>
+
+      <p>
+        Wähle einen Stil:
+        <select class="stil" name="stil" id="stil">
+          <option value="lr">Von links nach rechts →</option>
+          <option value="ou">Von oben nach unten ↓</option>
+          <option value="rl">Von rechts nach links ←</option>
+          <option value="uo">Von unten nach oben ↑</option>
+        </select>
+      </p>
+      <p>
+        Wähle eine hintergrund farbe
+        <input type="color" name="bgFarbe" id="bgFarbe" />
+      </p>
+      <p>
+        Wähle einen Intervall für den Bildwechsel in Sekunden
+        <input
+          type="range"
+          name="int"
+          id="int"
+          min="1"
+          step="1"
+          max="600"
+          value="1"
+        />
+        <output name="zeit" for="int">1s</output>
+      </p>
+      <div class="btn">
+        <button class="send">Start</button>
+      </div>
+      <div class="img wrapper"></div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+/* === Small CSS Reset === */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(19, 13, 27);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    color: rgb(19, 13, 27);
+}
+
+a, a:focus, a:visited {
+    text-decoration: none;
+    color: rgb(19, 13, 27);
+}
+
+#request {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(25deg, rgba(111,196,181,1) 30%, rgb(12, 60, 114) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5em;
+}
+
+h1 {
+    font-size: 13em;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+
+#add {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: none;
+}
+
+#addinput {
+    width: 20em;
+    height: 2em;
+}
+
+button {
+    margin-top: 4em;
+    font-size: 1em;
+    color: white;
+    background: transparent;
+    border: 4px solid transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(25deg, rgba(111,196,181,1) 30%, rgb(12, 60, 114) 70%);
+    padding: 2em;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 10em 3em;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px gainsboro;
+    display: grid;
+    grid-template-areas:
+    '. . .'  
+    '. card-img .'
+    '. card-desc .'
+    ;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+}
+
+.card .card-image {
+    grid-area: card-img;
+}
+
+.card .card-image img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.card .desc {
+    grid-area: card-desc;
+    height: 5em;
+    text-align: center;
+}
+
+.card .desc p {
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+

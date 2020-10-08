@@ -1,0 +1,21 @@
+@import "../../assets/css/tp_reset.css";
+
+body {
+  background: #333333;
+}
+
+.container {
+  display: flex;
+  /*grid-template-columns: repeat(28, 1fr);*/
+  /*gap: 0.5rem;*/
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0 0.5rem;
+}
+
+.card img {
+  width: 50px;
+  height: auto;
+}
