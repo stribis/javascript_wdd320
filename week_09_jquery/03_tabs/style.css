@@ -1,0 +1,56 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  background: #444;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.tab-container {
+  margin: 60px auto;
+  width: 70%;
+  max-width: 500px;
+}
+
+.tab-auswahl li{
+  position: relative;
+  background: #fff;
+  color: rgb(73, 73, 73);
+  display: inline-block;
+  padding: 20px 40px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.tab-auswahl li:hover{
+  color: #222;
+}
+
+.tab-auswahl li.active{
+  color: #222;
+  opacity: 1;
+}
+
+.tab-inhalt > div {
+  background: #fff;
+  width: 100%;
+  padding: 50px;
+  min-height: 200px;
+}
+
+.line {
+  position: absolute;
+  width: 0;
+  height: 7px;
+  background: hotpink;
+  top: 0;
+  left: 0;
+}

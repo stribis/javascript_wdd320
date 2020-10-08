@@ -213,7 +213,10 @@
 * Web Application with API 
   1. Create a web application using any API you desire
       * The only prerequisite is to use an API request (i.e. Using fetch or jquery ajax )
-      * All finished project will be listed here in the future (LINK TO REPO COMING SOON)
+      * You can find the student projects under week_09_jquery/02_example_projects_students
   2. Example App can be found in the week_09 folder
 
+#### :books: Unit 9
+* :file_folder: Tabs
+  1. Creating a tab system with jQuery ( read the comments in the code!)
 ---
